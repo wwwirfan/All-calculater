@@ -1,0 +1,318 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+	
+
+<head>
+		<title>
+			Calculator Color Selector 
+		</title>
+		<META NAME="Description" CONTENT="Calculator Color Selector: ">
+		
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta http-equiv="Content-Type" content="text/html; charset=iso8859-1">
+<link rel="shortcut icon" href="favicon.html">
+<meta name="viewport" content="height=device-height,width=device-width,initial-scale=1">
+		<link type='text/css' rel='StyleSheet' href='../java/cal.css' />
+
+<script type="text/javascript">
+function navigateLink(form) {
+var destination = form.selectNav[form.selectNav.selectedIndex].value;
+if (destination != '*') {location.href = destination; }
+else {  return false; }
+}
+</script>
+<link type='text/css' rel='StyleSheet' href='../java/KJE.css' />
+<link type='text/css' rel='StyleSheet' href='../java/KJESiteSpecific.css' />
+
+<STYLE>
+
+.KJEReportTable {
+    width:auto;
+}
+
+.KJEReportTableDiv {
+    width:auto;
+}
+</STYLE>    
+<script>
+function doLeave() { 
+  document.calcsubmit.btnCallCalc.focus();
+}
+
+function showbuttons() {   
+  var agt       = navigator.userAgent.toLowerCase();
+  var IEMAC     = ((agt.indexOf("msie") != -1) && agt.indexOf("mac")!=-1);
+  var N6        = (agt.indexOf("netscape6") != -1 || (agt.indexOf("netscape/6") !=-1 ));
+  
+  if ( N6 ) {
+    return "Netscape 6 is unable to support our detailed reports.  Please upgrade to Netscape 7 or higher.<P>";
+  }
+  if ( IEMAC ) {
+    return "Internet Explorer for Macintosh is unable to support our detailed reports.  Please use Safari or Firefox.<P>";
+  }
+
+  return "<P><FORM name=calcsubmit><INPUT TYPE='button' value='Calculate' Name='btnCallCalc' onClick='document.calculator.calculate()'><INPUT TYPE='button' value='View Report' Name='btnOpenNote' onClick='openNote()'></FORM>";
+
+}
+
+function openNote(){ 
+  leftpos=0;
+  if (screen) {
+    leftpos=screen.width/2 - 480;
+ }
+
+  var OpenWindow = window.open("","_blank","toolbar=yes,menubar=yes,location=no,directories=no,status=no,scrollbars=yes,resizable=yes,copyhistory=no,width=960,height="+(screen.height-170)+",left="+leftpos+",top=5");
+
+  if (navigator.userAgent.toLowerCase().indexOf('chrome') > -1)
+    setTimeout(function(){openContinue(OpenWindow)},100);
+  else
+    openContinue(OpenWindow);
+}
+
+function openContinue(OpenWindow){
+  var s = " ";
+  s=document.calculator.sJavaScriptReport('HTML');
+  OpenWindow.document.write(s);
+  OpenWindow.document.close();
+  OpenWindow.focus();
+}
+
+
+function navigateLink(form) {
+var destination = form.selectNav[form.selectNav.selectedIndex].value;
+if (destination != '*') {location.href = destination; }
+else {  return false; }
+} 
+</script>
+</head>
+	<body>
+<div align=center><div class=KJEWrapper id="KJEPageHeader">
+		<div class=container>
+			<div class=row >
+				<div class="sixcol">
+<a href="../index.html" alt="cal.net Financial Calculators" border=0;><img id=KJELogo border=0; class="KJEImageLeft" src="../images/banner2.png"  alt="Financial Calculators from cal.net" ></a>									</div>
+				<div class="sixcol last" style="text-align:center">
+					<a href="../index-2.html" alt="financial calculators" class="calSubTitle" style="text-decoration: none" alt='Financial Calculators from cal.net'>
+<span class="KJEMediumScreenHide"><br></span><h1 class="large"><strong>Financial Calculators from cal.net</strong></h1></a><span class="KJESmallScreenHide KJELogoSmallText"><span class="KJEMediumScreenHide"><img src="../images/downarrowsmall.jpg" alt="cal AutoSave" align=right></span>The best financial calculators anywhere!<span class="KJEMediumScreenHide"> Now even better with <a href="autosave.html"><b>cal AutoSave</b></A>. Work, save and email your results!</span></span>
+
+<DIV align=center><form method="get" action="https://www.cal.net/money/search.html" target="_top"><input type="submit" class="KJESearchButton" name="sa" value="Search cal"></input></form></DIV>
+
+					<div class="KJEIntro">
+            <a class="ss-icon" href="#" id="KJENavButton" onclick="KJ.KJECalcNav();return false;"><br><br>More&darr;</a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		
+		<div class=container>
+			<div class=row>				<div class="twelvecol KJETopNav"><span class="KJESmallScreenHide" id="KJECalcNavigation2"><a HREF="feedback.html" class="toplink" >Feedback</a><a HREF="order.html" class="toplink">Order&nbsp;Online</a><a HREF="free.html" class="toplink">Free&nbsp;Trials!</a><a HREF="information.html"class="toplink">Information</a><a HREF="V3trouble.html" class="toplink">Trouble?</a></span>				</div>			</div>
+		</div>
+		
+		<div class=container>
+			<div class="row KJEMediumScreenHide" id="KJECalcNavigation">				<div class="twelvecol KJECalcNav">			<a href="../mortgage.html" class="leftnav">Mortgages</a><a href="../loan.html" class="leftnav">Loans</a><a href="../debt.html" class="leftnav">Credit&nbsp;Cards</a><a href="../auto.html" class="leftnav">Auto</a><a href="../investment.html" class="leftnav">Investments</a><a href="../retirement.html" class="leftnav">Retirement</a><a href="../insurance.html" class="leftnav">Insurance</a><span class="KJEMediumScreenHide"><br></span><a href="../taxes.html" class="leftnav">Taxes</a><a href="../savings.html" class="leftnav">Savings</a><a href="../personal.html" class="leftnav">Finance</a><a href="../business.html" class="leftnav">Business</a><a href="../java/SP.html" class="leftnav">Spanish</a><a href="../java/ca.html" class="leftnav">Canadian</a><a href="../financialcalculators.html" class="leftnav">Show All</a>				</div>			</div>
+		</div>
+		
+<div class=container>
+			<div class=row>
+				<div class="twelvecol TopSpacer" >
+				</div>
+			</div>
+		</div>
+		
+		<!-- \\Main Area\\ -->
+		<div class=container>
+			<div class=row>
+								<div class="twelvecol last">
+					<h1 class=large>Calculator Color Selector</h1>
+		</div>
+			</div>
+		</div>
+		
+
+
+		<!-- \\Main Area\\ -->
+			
+        
+		<div class=container>       
+	<div class=row style="height:10px">
+				<br>
+			</div>   
+		</div>
+
+		<div class=container>
+			<div class=row>
+	<div class="twelvecol last">
+<div class='calContent'>
+
+	
+<script type="text/javascript" src="colorpicker/colorPicker.js"></script>
+
+<h2 class='KJEReportHeader KJEFontHeading'>Click on input fields below to view and change colors</h2>
+This simple color selection page lets you pick and choose colors.  You can then use the generated HTML color codes in your customized deployment pages. This page doesn't map any of your selected colors to the specific color settings in your calculator files.  Future enhancements will allow this page to generate the common color selection code used by the calculators automatically. <p>
+<form>
+		  Color selection 1: <input name="Color1" onclick="colorPicker(event)" value="#000055"></input><br>
+		  Color selection 2: <input name="Color2" onclick="colorPicker(event)" value="#7B68EE"></input><br>
+		  Color selection 3: <input name="Color3" onclick="colorPicker(event)" value="#64A650"></input><br>
+		  Color selection 4: <input name="Color4" onclick="colorPicker(event)" value="#FFF200"></input><br>
+		  Color selection 5: <input name="Color5" onclick="colorPicker(event)" value="#5f007f"></input><br>
+		  Color selection 6: <input name="Color6" onclick="colorPicker(event)" value="#F15A22"></input><br>
+		  Color selection 7: <input name="Color7" onclick="colorPicker(event)" value="#B72467"></input><br>
+		  Color selection 8: <input name="Color8" onclick="colorPicker(event)" value="#6DC8BF"></input><br>
+		  Color selection 9: <input name="Color9" onclick="colorPicker(event)" value="#00007f"></input><br>
+		  Color selection 10: <input name="Color10" onclick="colorPicker(event)" value="#ff00ff"></input><br>
+		  Color selection 11: <input name="Color11" onclick="colorPicker(event)" value="#ffff00"></input><br>
+		  Color selection 12: <input name="Color12" onclick="colorPicker(event)" value="#00ffff"></input><br>
+		  Color selection 13: <input name="Color13" onclick="colorPicker(event)" value="#7f007f"></input><br>
+		  Color selection 14: <input name="Color14" onclick="colorPicker(event)" value="#7f0000"></input><br>
+		  Color selection 15: <input name="Color15" onclick="colorPicker(event)" value="#007f7f"></input><br>
+		  Color selection 16: <input name="Color16" onclick="colorPicker(event)" value="#00c8ff"></input><br>
+		  Color selection 17: <input name="Color17" onclick="colorPicker(event)" value="#60ffff"></input><br>
+		  Color selection 18: <input name="Color18" onclick="colorPicker(event)" value="#bfffbf"></input><br>
+		  Color selection 19: <input name="Color19" onclick="colorPicker(event)" value="#ffff90"></input><br>
+		  Color selection 20: <input name="Color20" onclick="colorPicker(event)" value="#a0c8ef"></input><br>
+ </form>	
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+	
+
+						
+<br>
+<center>
+<style>
+.responsive-bottom-of-calc { width: 320px; height: 50px; }
+@media(min-width: 500px) { .responsive-bottom-of-calc { width: 468px; height: 60px; } }
+@media(min-width: 800px) { .responsive-bottom-of-calc { width: 728px; height: 90px; } }
+</style>
+<script async src="../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+<!-- Responsive bottom of Calc -->
+<ins class="adsbygoogle responsive-bottom-of-calc"
+     style="display:inline-block"
+     data-ad-client="ca-pub-3089121361425291"
+     data-ad-slot="4029634463"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</center>
+</div>
+				</div>
+			</div>
+		</div>
+		<div class=container>
+			<div class=row>
+				<div class="twelvecol" style="text-align:center">
+					<hr class=calHRFooter>
+					<P>
+					<a href="free.html">
+						<h1 class=large>
+							The Best Financial Calculators Anywhere!
+						</h1>
+						Put them on your website!
+					</a>
+					<P>
+					<strong>
+						&copy; 1998-2016 KJE Computer Solutions, LLC
+					</strong>
+					<br/>
+					Financial Calculators at http://www.cal.net
+					<br/>
+					(612) 331-2291 
+					<br/>
+					1730 New Brighton Blvd. PMB #111
+					<br/>
+					Minneapolis, MN 55413
+					<p class=footer>
+					KJE Computer Solutions, LLC's information and interactive calculators are made
+					available to you as self-help tools for your independent use and are not
+					intended to provide investment advice. We cannot and do not guarantee their
+					applicability or accuracy in regards to your individual circumstances. All
+					examples are hypothetical and are for illustrative purposes.  We encourage you
+					to seek personalized advice from qualified professionals regarding all personal
+					finance issues. More 
+					<a href="information.html">Information</a>
+					<br>
+					<br>
+				</div>
+			</div>
+		</div>
+		</div>
+		</div>
+
+ <script>  
+ KJ=new Object();
+   KJ.KJECalcNavigation = document.getElementById("KJECalcNavigation");
+   KJ.KJECalcNavigation2 = document.getElementById("KJECalcNavigation2");
+   KJ.KJENavButton = document.getElementById("KJENavButton");
+   KJ.ShowNav = false;
+
+   KJ.KJECalcNav = function(){
+     if (KJ.ShowNav) {
+       KJ.KJECalcNavigation.style.display='none';
+       if (window.innerWidth < 500) KJ.KJECalcNavigation2.style.display='none';
+       KJ.KJENavButton.innerHTML='<br><br>More&darr;';
+       KJ.ShowNav = false;
+     }
+     else    {
+       KJ.KJECalcNavigation.style.display='block';
+       KJ.KJECalcNavigation2.style.display='inline-block';
+       KJ.KJENavButton.innerHTML='<br><br>Less&uarr;';
+       KJ.ShowNav = true;
+     }
+   };
+
+
+   KJ.KJECalcNavResize = function(){
+     var iNavOldWidth = window.innerWidth;
+     if (iNavOldWidth > 900)   KJ.KJECalcNavigation.style.display='block';
+     else  KJ.KJECalcNavigation.style.display='none';
+
+     if (iNavOldWidth > 500)   KJ.KJECalcNavigation2.style.display='inline-block';
+     else  KJ.KJECalcNavigation2.style.display='none';
+
+     if (iNavOldWidth < 900) {KJ.ShowNav = false;  KJ.KJENavButton.innerHTML='<br><br>More&darr;';}
+
+   };
+
+   if (window.addEventListener) {
+     window.addEventListener('resize', KJ.KJECalcNavResize ,false);
+   }
+ </script>
+
+<script>
+  function KJESetRecents(rvt_div){
+    if (!rvt_div) return;
+
+    var aList = new Array();
+    for (var i = 0; i < localStorage.length; i++){
+      aList[i] = localStorage.key(i) ;
+    }
+    aList = aList.sort();
+
+    var iList = rvt_div;
+    var sList = "";
+    for (var i = 0; i < aList.length; i++){
+      //  only care about entries without a "_" in them.
+      var i_ = aList[i].indexOf("_");
+      if (i_ < 0) {
+        var name = (aList[i]+"_name");
+        var iCutOff = aList[i].indexOf('#');
+        if (iCutOff>0) sIndex = aList[i].substring(0,iCutOff);
+        else sIndex =  aList[i];
+
+        var sHref = sIndex +"_href";
+        var sTitle = sIndex +"_title";
+  if (localStorage.getItem(sTitle)!=null) {
+    sList += "<dt style='line-height:0px'><div class='rvt_line' style='line-height:0px'><div class='rvt_line_lead' style='line-height:0px'>&#9829;</div></dt><dd><a href='"+ localStorage.getItem(sHref)+"?KJEData="+ localStorage.getItem(aList[i]) +"'>"+localStorage.getItem(sTitle)+(iCutOff>0?" : "+localStorage.getItem(name) :"")+"</a></div></dd>";
+     }
+      }
+    }
+    iList.innerHTML = '<dl><div class="rvt_title">Recently saved:</div>'+sList+'</dl>';
+  }
+  KJESetRecents(document.getElementById("KJERecents"));
+
+</script>
+</body>
+
+
+</html>

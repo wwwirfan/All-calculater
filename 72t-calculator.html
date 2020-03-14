@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<!-- Mirrored from www.cal.net/java/72t-calculator.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Mar 2020 19:02:09 GMT -->
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-43956501-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-43956501-1');
+</script>
+<title>72(t) Calculator</title>
+<meta name="description" content="The IRS Rule 72T allows for penalty free, early withdrawals from retirement accounts.  Use this calculator to determine your allowable 72T Distribution and how it can help fund your early retirement.">
+    <meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.0, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name = "format-detection" content = "telephone=no">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+<!-- Get a 72(t) Calculator you can put on your website! Many more colorful, interactive, graphing financial calculators.  Financial Calculators, &copy;1998-2020 KJE Computer Solutions, Inc.  For more information please see:   <a href="https://www.cal.net">https://www.cal.net</A> -->
+<link rel="stylesheet" href="../css/cal.css">
+<link rel="stylesheet" type="text/css" href="KJE.css" />
+<link rel="stylesheet" type="text/css" href="KJESiteSpecific.css" />
+<script SRC="../css/menu.js"> </script>
+</head>
+<body>
+<!--[if lte IE 9]>
+<div style='clear: both; text-align:center; position: relative; width:90%; border:2px #006D38 solid;'>
+    <a href="https://support.microsoft.com/en-us/hub/4230784/internet-explorer-help">
+        You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today.
+    </a>
+</div>
+<![endif]-->
+<a href="#KJEMainContent" class="KJEAccessibleSkip">[Skip to Content]</a>
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="grid_12">
+                <div class="banner">
+                    <div class="logocolumn">
+                        <a href="../index-2.html"><img src="../images/SuperBigcal.png" alt="Dinkyown.net Financial Calculators" class="logo"></a>
+                    </div>
+                    <div class="textcolumn">
+                        <div class="banner_title">Financial Calculators from cal.net</div>
+                        <span class="banner_content">Updated for 2020 and the <a href="../secure_act_1019_calculators.html"><b>SECURE ACT</b>.</a> <br>Work, save and email your results!</span>
+                    </div>
+                    <div class="bannercolumn">
+                        <img src="../images/FinancialCalculators.png" alt="Financial Calculators Wordle" class="logo2">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="nav_box">
+        <div class="container">
+            <div class="row" id="KJESmallScreenMenuBlock">
+                <div class="grid_12">
+                    <nav>
+                        <label tabindex="0" for="drop" class="toggle" onclick="showMenu();" onkeypress="if (event.keyCode == 13) return showMenu();"><I class="fa fa-bars" aria-hidden="true"></i><span class="main_menu">Menu</span></label>
+                        <input type="checkbox" id="drop" onclick="showMenu();" onkeypress="if (event.keyCode == 13) return showMenu();">
+                        <ul class="sf-menu clearfix" id="KJECalculatorMenu">
+
+                            <li>
+                                <a href="#" class="submenu" onclick="showSubmenu();" onkeypress="if (event.keyCode == 13) return showSubmenu();">Calculators</a>
+                                <label tabindex="0" for="drop-2" class="toggle toggle-submenu" onclick="showSubmenu();" onkeypress="if (event.keyCode == 13) return showSubmenu();">Calculators +</label>
+                                <input type="checkbox" id="drop-2"/>
+                                <ul id="KJECalculatorSubMenu" style="display:none;">
+                                    <li><a href="../money/recent.html" id="KJEFirstCalculatorMenu"><span class="fa-calculator"></span> Recent Calculations</a></li>
+                                    <li><a href="../financialcalculators.html"><span class="fa-calculator"></span> Show All</a></li>
+                                    <li><a href="../mortgage.html"><span class="fa-home"></span> Mortgage</a></li>
+                                    <li><a href="../loan.html"><span class="fa-money"></span> Loans</a></li>
+                                    <li><a href="../debt.html"><span class="fa-credit-card"></span> Credit Cards &amp; Debt</a></li>
+                                    <li><a href="../auto.html"><span class="fa-car"></span> Auto</a></li>
+                                    <li><a href="../investment.html"><span class="fa-calculator"></span> Investment</a></li>
+                                    <li><a href="../retirement.html"><span class="fa-usd"></span> Retirement Savings &amp; Planning</a></li>
+                                    <li><a href="../insurance.html"><span class="fa-shield"></span> Insurance</a></li>
+                                    <li><a href="../taxes.html"><span class="fa-briefcase"></span> Tax</a></li>
+                                    <li><a href="../savings.html"><span class="fa-life-ring"></span> Savings</a></li>
+                                    <li><a href="../personal.html"><span class="fa-user"></span> Personal Finance</a></li>
+                                    <li><a href="../business.html"><span class="fa-building"></span> Business</a></li>
+                                    <li><a href="SP.html"><span class="fa-flag-checkered"></span> Spanish</a></li>
+                                    <li><a href="ca.html"><span class="fa-flag"></span> Canadian</a></li>
+                                    <li><a href="FR.html"><span class="fa-flag"></span> French Canadian</a></li>
+                                    <li><a href="../au.html"><span class="fa-flag-o"></span> Australian</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+
+<nav class="toggle-right">
+<label tabindex="0" for="drop-2" class="toggle"><a href="../money/recent.html"><I class="fa fa-calculator"></i><span class="main_menu">Calc<span class="bigonly">ulator</span>s</span></a></label>    
+<label tabindex="0" for="drop-3" class="toggle toggle-right" onclick="showSearch();" onkeypress="if (event.keyCode == 13) return showSearch();"><I class="fa fa-question-circle"></i><span class="main_menu">Search</span></label>
+                        <input type="checkbox" id="drop-3" />
+                        <ul class="sf-menu clearfix toggle-right">
+                            <li onclick="showSearch();"><a href="#" class="submenu"><span class="fa-question-circle"></span> Search</a></li>
+                        </ul>
+</nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="search-background" >
+        <div class="container search-background">
+            <div class="row">
+                <div class="grid_12">
+                    <!-- Google Search Result Snippet Begins -->
+                    <div id="cse" style="width: 100%; display:none;">
+                        <script>
+                            (function() {
+                                var cx = 'partner-pub-3089121361425291:2945855256';
+                                var gcse = document.createElement('script');
+                                gcse.type = 'text/javascript';
+                                gcse.async = true;
+                                gcse.src = '../../cse.google.com/cse07b6.html?cx=' + cx;
+                                var s = document.getElementsByTagName('script')[0];
+                                s.parentNode.insertBefore(gcse, s);
+                            })();
+                        </script>
+                        <gcse:search></gcse:search>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<a id="KJEMainContent" title="page content"></a>
+<div id="content">
+<div class="container">
+
+<div class="row">
+    <div class="grid_mainleft">
+<p>
+<center>
+<style>
+.example_responsive_1 { width: 300px; height: 250px; }
+@media(min-width: 768px) { .example_responsive_1 { width: 336px; height: 280px; } }
+</style>
+<script async src="../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+<!-- example_responsive_1 -->
+<ins class="adsbygoogle example_responsive_1"
+     style="display:inline-block"
+     data-ad-client="ca-pub-3089121361425291"
+     data-ad-slot="5087565265"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<div id="KJERecents" ></div>
+<style>
+.example_responsive_2 { width: 234px; height: 60px; }
+@media(min-width: 768px) { .example_responsive_2 { width: 336px; height: 280px; } }
+</style>
+<script async src="../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+<!-- example_responsive_2 -->
+<ins class="adsbygoogle example_responsive_2"
+     style="display:inline-block"
+     data-ad-client="ca-pub-3089121361425291"
+     data-ad-slot="5087565265"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</center>
+    </p>
+</div>
+
+    <div class="grid_mainright">
+        <div style="text-align: center"><h1 id="KJETitleH1" class="KJEFontTitle">72(t) Calculator</h1></div>
+
+<span id='KJECalculatorDescID'>The Internal Revenue Code section 72(t) and 72(q) can allow for penalty free early withdrawals from retirement accounts under certain circumstances. These sections can allow you to begin receiving money from your retirement accounts before you turn age 59-1/2 generally without the normal 10% premature distribution penalty. Use this calculator to determine your allowable 72(t)/(q) Distribution and how it maybe able to help fund your early retirement. The IRS rules regarding 72(t)/(q) Distributions are complex. Please consult a qualified professional when making decisions about your personal finances. Please note that your financial institution may or may not support all the methods displayed via this calculator.</span>
+<noscript><div class=KJECenterText><div id=KJENoJavaScript class=KJENoJavaScript>Javascript is required for this calculator.  If you are using Internet Explorer, you may need to select to 'Allow Blocked Content' to view this calculator.<p>For more information about these financial calculators please visit: <a href="../index.html">cal.net</a> Financial Calculators from KJE Computer Solutions, Inc.</p></div></div></noscript>
+<div id="KJEAllContent"></div>
+<!-- Get a 72(t) Calculator you can put on your website! Many more colorful, interactive, graphing financial calculators.  Financial Calculators, &copy;1998-2020 KJE Computer Solutions, Inc.  For more information please see:   <a href="https://www.cal.net">https://www.cal.net</A> -->
+<script type="text/javascript" SRC="KJE.js"></script>
+<script type="text/javascript" SRC="KJESiteSpecific.js"></script>
+<script type="text/javascript" SRC="Retire72T.js"></script>
+
+<script type="text/javascript" SRC="Retire72TParams.js"></script>
+
+
+<!--KJEDEFINITIONS--><div id=KJEDefinitions class=KJEDefinitions  width=100%><h2 class='KJEDefinitionsHeader KJEFontHeading'>72(t) Calculator Definitions</h2><dl id=KJEDefinitionText>
+ <div id='KJE-D-REASONABLE_INTEREST_RATE' ><dt>Reasonable interest rate</dt><dd>This is any rate less than or equal to 120% of the Federal Mid-Term rate for either of the two months immediately preceding the month in which the distribution begins. <a title='Click here for more information from irs.gov about Federal Interest rates' href='https://apps.irs.gov/app/picklist/list/federalRates.html' target="_KJEnew">Click here for more information about Federal Interest rates</a>. **72TRATE_DEFINITION** <p>It is important to note that the associated law that created 72(t) distributions did not define what was to be considered a reasonable interest rate. As such, the guidance from the IRS generally flows from the concept that they will not allow people to circumvent the requirement of substantially equal periodic payments (SEPP) throughout your lifetime by using an unreasonably high interest rate. <p>72(t) withdrawals setup prior to January 2003, had some flexibility in the choice of the reasonable rate to use. However, in 2002, the IRS issued new rules stating that only rates less than or equal to 120% of the Federal Mid-Term rate would be considered reasonable. You are now required to use a rate that is less than or equal to 120% of the Federal Mid-Term rate for either of the two months immediately prior to the start of your distribution plan.</dd></div> <div id='KJE-D-METHOD_TO_USE' ><dt>Substantially Equal Periodic Payments (SEPP)</dt><dd>The rules for 72(t)/(q) distributions require you to receive Substantially Equal Periodic Payments (SEPP) based on your life expectancy to avoid a 10% premature distribution penalty on any amounts you withdraw. Payments must last for five years (the five-year period does not end until the fifth anniversary of the first distribution received) or until you are 59-1/2, whichever is longer. Further, the SEPP amount must be calculated using one of the IRS approved methods which include: <p> <UL> <li><strong>Required minimum distribution method:</strong> This is the simplest method for calculating your SEPP, but it also typically produces the lowest payment. It simply takes your current balance and divides it by your single life expectancy or joint life expectancy. Your payment is then recalculated each year with your account balance as of December 31<sup>st</sup> of the preceding year and your current life expectancy. This is the only method that allows for a payment that will change as your account value changes. Even though this may provide the lowest payment, it may be the best distribution method if you expect wide fluctuations in the value of your account. <p></li> <li><strong>Fixed amortization method:</strong> With this method, the amount to be distributed annually is determined by amortizing your account balance over your single life expectancy, the uniform life expectancy table or joint life expectancy with your oldest named beneficiary. <p></li> <li><strong>Fixed annuitization method:</strong> This method uses an annuity factor to calculate your SEPP. This is one of the most complex methods. The IRS explains it as taking the taxpayer's account balance divided by an annuity factor equal to the present value of an annuity of $1 per month beginning at the taxpayer's age attained in the first distribution year and continuing for the life of the taxpayer. For example, if the annuity factor for a $1 per year annuity for an individual who is 50 years old is 19.087 (assuming an interest rate of 3.8% percent), an individual with a $100,000 account balance would receive an annual distribution of $5,239 ($100,000/19.087 = $5,239). This calculator uses the mortality table published in IRS Revenue Ruling 2002-62, which is a non-sex based mortality table. Please note that your annuitized SEPP is based on your life expectancy only, and is not based on the age of your beneficiary.</li> </UL> <p>In addition, on July 3rd, 2002, the IRS ruled that you could change your distribution type one-time without penalty from the Annuitized or Amortized methods to the Required Minimum Distribution method. This would allow account holders the option to move from a fixed payment type to a payment that fluctuates annually with the value of their account. The primary reason for this exception is to allow individuals who have suffered large losses, the option to reduce their distribution to prevent their retirement account from being prematurely depleted. For more information on this important exception please see Revenue Ruling 2002-62 on <a href='https://www.treasury.gov/' title='U.S. Treasury' target="_KJEnew">www.treasury.gov</a>. <p>If payments are changed for any reason other than death or disability before the required distribution period ends, the distributions may be subject to a retroactive application of the Premature Distribution penalty. It is 10% (plus interest) for all years beginning the year such payments commenced and ending the year of the modification. It is important to remember that while 72(t) distributions are not subject to the 10% penalty for early withdrawal, all applicable taxes on the distributions must still be paid. Further, taking any early distributions from a retirement account reduces the amount of money available later during your retirement. Please contact a qualified professional for more information.</dd></div> <div id='KJE-D-ACCOUNT_BALANCE' ><dt>Account balance</dt><dd>This is the account balance used to calculate the Substantially Equal Periodic Payments (SEPP). The IRS rules allow for "an account balance to be determined in any reasonable manner based on the facts and circumstances". <p>The IRS provides an example of a reasonable determination of the account balance for the minimum distribution method. This example is not a definitive rule and not specific to the other methods. The IRS example allows for use of an account balance from any daily value between December 31<sup>st</sup> (of the year prior to distributions beginning) and the actual date of the first distribution. For subsequent years the value on December 31<sup>st</sup> of the prior year could be used or the account balance on a date within a reasonable period of the distribution. </dd></div> <div id='KJE-D-YOUR_AGE' ><dt>Your age</dt><dd>This is your current age. Use the age you will turn on your birthday for the year you are receiving the distribution.</dd></div> <div id='KJE-D-BENEFICIARY_AGE' ><dt>Beneficiary age</dt><dd>This is your beneficiary's age. Use the age your beneficiary will turn on their birthday for the year you are receiving the distribution. This entry is ignored if you do not use your Joint Life Expectancy to calculate your SEPP.</dd></div> <div id='KJE-D-LIFE_EXPECTANCY_TABLE' ><dt>Choose life expectancy tables</dt><dd>There are three different life expectancy tables that the IRS allows you to use when calculating your SEPP with the 'Fixed Amortization' or the 'Required Minimum Distribution' methods. It is important to note that once you have chosen a distribution method and life expectancy table, you cannot change either throughout the course of your distributions. (Except for a one-time change from the Annuitized or Amortized methods to the Life Expectancy method, see SEPP definition for more details).  <div class='KJEReportTableDiv'><table class='KJEReportTable'><caption class='KJEHeaderRow KJEHeading'>SEPP Life Expectancy Options</caption> <tbody class='KJEReportTBody'> <tr class='KJEOddRow'><th class='KJELabel KJECellBorder KJELabelPad KJECell40' scope='row'>Uniform Lifetime</th><td class='KJECell KJECell60'>This is a non-sex based table developed by the IRS to simplify minimum distribution requirements. The uniform lifetime table estimates joint survivorship, but does not use your beneficiary's age to determine the resulting life expectancy. This table can be used by all account owners regardless of marital status or selected beneficiary.</td></tr> <tr class='KJEEvenRow'><th class='KJELabel KJECellBorder KJELabelPad' scope='row'>Single Life Expectancy</th><td class='KJECell'>This is a non-sex based life expectancy table. This table does not use your beneficiary's age to calculate your life expectancy. This table can be used by all account owners regardless of marital status or selected beneficiary. Choosing single life expectancy will produce the highest distribution of the three available life expectancy tables.</td></tr> <tr class='KJEOddRow'><th class='KJELabel KJECellBorder KJELabelPad' scope='row'>Joint Life Expectancy</th><td class='KJECell'>This is also a non-sex based life expectancy table for determining joint survivorship using your oldest named beneficiary.</td></tr> </tbody> </table></div> </dd></div> </dl></div><!--KJEDEFINITIONSEND-->
+
+    </div>
+</div>
+
+<div class="row">
+<div class="grid_12">
+<center>
+<style>
+
+.example_responsive_3 { width: 300px; height: 250px; }
+@media(min-width: 768px) { .example_responsive_3 { width: 728px; height: 90px; } }
+</style>
+
+<script async src="../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+<!-- Responsive bottom of Calc -->
+<ins class="adsbygoogle example_responsive_3"
+     style="display:block"
+     data-ad-client="ca-pub-3089121361425291"
+     data-ad-slot="4029634463"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</center>
+<p>
+</div>
+</div>
+
+</div>
+</div>
+
+<footer>
+<div class="container">
+<div class="row">
+<div class="grid_4a m_30 footertext" >
+                <div class="contact_title">Contacts</div>
+                KJE Computer Solutions, Inc.<br>
+                1730 New Brighton Blvd.<br>
+                PMB #111 <br>
+                Minneapolis, MN 55413<br>
+                (612) 331-2291
+            </div>
+            <div class="grid_4a">
+                <div class="category_title">Calculators</div>
+                <ul class="footer_links">
+                    <li><a href="../investment.html">Investment</a></li>
+                    <li><a href="../retirement.html">Retirement Savings &amp; Planning</a></li>
+                    <li><a href="../mortgage.html">Mortgage</a></li>
+                    <li><a href="../loan.html">Loans</a></li>
+                    <li><a href="../debt.html">Credit Cards &amp; Debt</a></li>
+                    <li><a href="../auto.html">Auto</a></li>
+                    <li><a href="../taxes.html">Tax Calculators</a></li>
+                </ul>
+            </div>
+
+            <div class="grid_4a m_30">
+                <div class="category_title category_title_hide">More Calculators</div>
+                <ul class="footer_links">
+                    <li><a href="../savings.html">Savings Calculators</a></li>
+                    <li><a href="../business.html">Business Calculators</a></li>
+                    <li><a href="../insurance.html">Insurance Calculators</a></li>
+                    <li><a href="../personal.html">Personal Finance</a></li>
+                    <li><a href="SP.html">Spanish Calculators</a></li>
+                    <li><a href="ca.html">Canadian Calculators</a></li>
+                    <li><a href="FR.html">French Canadian Calculators</a></li>
+                </ul>
+</div>
+            </div>
+
+<div id="KJEBubbleBox">
+    <div id="KJEBubbleHolder">
+        <a href="#" id="KJEBubbleClose" onclick="document.getElementById('KJEBubbleBox').style.display='none';"></a>
+        <div class="KJEBubbleMain">
+            <p class="KJEBubbleText">Sign-up for Free Trial!</p>
+            <!--p>.</p-->
+            <a type="button" href="../money/download.html" id="KJEBubbleAction" title="Sign up and get a free trial package">Learn More</a>
+        </div>
+    </div>
+</div>
+<div class="row"><div class="grid_12 centeredtext" ><p>					<hr class=calHRFooter>
+					<div class=KJEFooterBig>The Best Financial Calculators Anywhere!</div>
+					<strong>
+						&copy; 1998-2020 KJE Computer Solutions, Inc.
+					</strong>
+					<br/>
+					Financial Calculators at https://www.cal.net
+					<br/>
+					(612) 331-2291 
+					<br/>
+					1730 New Brighton Blvd. PMB #111
+					<br/>
+					Minneapolis, MN 55413
+					<p class=footer>
+					KJE Computer Solutions, Inc.'s information and interactive calculators are made
+					available to you as self-help tools for your independent use and are not
+					intended to provide investment advice. We cannot and do not guarantee their
+					applicability or accuracy in regards to your individual circumstances. All
+					examples are hypothetical and are for illustrative purposes.  We encourage you
+					to seek personalized advice from qualified professionals regarding all personal
+					finance issues. More 
+					<a href="../money/information.html">Information</a>
+					<br>
+					<br></div></div>
+</div>
+</footer>
+<script SRC="../css/recents.js"> </script>
+</body>
+
+<!-- Mirrored from www.cal.net/java/72t-calculator.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Mar 2020 19:02:12 GMT -->
+</html>
